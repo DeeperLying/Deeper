@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="Js/login.js"></script>
+</head>
+<body ng-app="login">
+    <div class="main" ng-controller="main" >
+        <div class="block tel" >
+            <input type="tel" placeholder="请输入手机号" onkeyup="value=value.replace(/[^\d]/g,'')" ng-model="obj.tel"   >
+            <span ng-class="{'close':obj.close, 'check':obj.check}" ng-click="close()" ></span>
+        </div>
+        <div class="block pws" >
+            <input type="text" placeholder="请输入密码" ng-model="obj.pws" >
+        </div>
+        <div class="sub" ng-click="validate()" >登录</div>
+        <div class="more" >
+            <span><a href="">快速注册</a></span>
+            <span><a href="">快速登录</a></span>
+            <span><a href="">忘记密码</a></span>
+        </div>
+    </div>
+</body>
+</html>

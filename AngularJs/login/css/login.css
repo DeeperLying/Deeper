@@ -1,0 +1,92 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color:#f2f2f2;
+}
+
+.main{
+    margin-top:20px;
+}
+
+.block{
+    background-color: white;
+    padding:13px 10px;
+}
+.block input{
+    font-size:14px;
+    width:100%;
+    border:0;
+    outline-width: 0px;
+}
+.block input:focus{
+    border:none;
+    box-sizing: none;
+}
+.block:first-child{
+    margin-bottom: 15px;
+}
+
+.sub{
+    background-color:#cc3232;
+    width:calc(100% - 30px);
+    margin:0 auto;
+    text-align:center;
+    color:white;
+    cursor: pointer;
+    font-size:18px;
+    letter-spacing: 4px;
+    padding:8px 0;
+    border-radius: 5px;
+    margin-top:15px;
+}
+
+.more{
+    padding:0 15px;
+    margin:0 auto;
+    margin-top:15px;
+}
+.more a{
+    color:#337ab7;
+    font-size:14px;
+}
+.more span:first-child{
+    padding-right:10px;
+}
+.more span:last-child{
+    float:right;
+}
+
+.tel{
+    display: flex;
+    flex-direction: row;
+}
+.tel input{
+    flex: 1;
+}
+.tel span{
+    width:30px;
+    background-size: 50%;
+}
+.close{
+    background:url("../images/icon_close_alt.png") center no-repeat;
+}
+
+.check{
+    background:url("../images/icon_check_alt.png") center no-repeat;
+}
+
+
+
+
+
+
+
+
