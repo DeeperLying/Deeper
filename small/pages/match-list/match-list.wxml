@@ -1,11 +1,21 @@
 <wxs src="../../filter/dateFr.wxs" module="module" />
 <view class='select' >
- <view class='select-match' catchtap='selectMatch' >{{match.arr[match.index]}}</view>
- <view class='select-type' >{{matchType.arr[matchType.index]}}</view>
+ <view class='select-match' data-type="matchLock" catchtap='selectMatch' >
+  <text>{{match.arr[matchIndex]}}</text>
+  <view class='select-list' wx:if="{{matchLock}}" >
+    <view catchtap='selectListIndex' class='select-item' wx:for-index="index"           wx:for="{{match.arr}}" data-type="matchLock" data-index="{{index}}" >{{item}}</view>
+  </view>        
+ </view>
+ <view class='select-type' data-type="matchTypeLock" catchtap='selectMatch' >
+  <text>{{matchType.arr[matchTypeIndex]}}</text>
+  <view class='select-list' wx:if="{{matchTypeLock}}" >
+    <view catchtap='selectListIndex' data-type="matchTypeLock" data-index="{{index}}" wx:for-index="index" class='select-item' wx:for="{{matchType.arr}}" >{{item}}</view>
+  </view>  
+ </view>
 </view>
 
 <view style='width: 100%; height: 41px;' ></view>
-<view class='match-list' >
+<view>
   <view class='item' wx:for="{{matchList}}" wx:for-index="index" wx:for-item="item" >
     <view class='item-description-img' >
      <image class='item-img' mode='widthFix' src='{{module.filter.icon(item.icon)}}' ></image>
@@ -22,3 +32,5 @@
  <image class='loadImg' mode='widthFix' src='../../images/loading.gif' ></image>
  <text class='loadText' >加载中</text>
 </view>
+
+<view class='layer' wx:if="{{LayerLock}}" catchtouchstart='LayerHide' ></view>

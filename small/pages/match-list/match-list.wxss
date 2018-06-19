@@ -28,7 +28,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 11;
   background: white;
 }
 
@@ -43,6 +43,7 @@
 .select .select-match{
   border-right: 1px solid rgb(222, 222, 222);
   box-sizing: content-box;
+  position: relative;
 }
 
 .select .select-match::before, .select .select-type::before{
@@ -54,6 +55,11 @@
   transform: rotate(40deg);
   right: 40px;
   top: 9px;
+}
+
+.match-list{
+  position: fixed;
+  height: calc(100% - 45px);
 }
 
 .item{
@@ -96,4 +102,26 @@
 
 .loadText{
   display: inline-block;
+}
+
+.layer{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top:0 ;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.select-list{
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 11;
+  top: 30px;
+}
+
+.select-item{
+  padding:10px 0;
 }
