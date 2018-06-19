@@ -1,0 +1,6 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#999",
+  "navigationBarTitleText": "赛事列表",
+  "onReachBottomDistance": 100
+}

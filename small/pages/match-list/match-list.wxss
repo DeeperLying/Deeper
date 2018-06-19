@@ -1,0 +1,99 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.select{
+  display: flex;
+  padding: 13px 0 10px 0;
+  border-bottom:1px solid rgb(222, 222, 222);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: white;
+}
+
+.select .select-match, .select .select-type{
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  height: 20px;
+  position: relative;
+}
+
+.select .select-match{
+  border-right: 1px solid rgb(222, 222, 222);
+  box-sizing: content-box;
+}
+
+.select .select-match::before, .select .select-type::before{
+  content: "";
+  position: absolute;
+  border-top: 5px dotted transparent;
+  border-bottom: 5px dotted transparent;
+  border-left: 5px solid rgb(77, 77, 77);
+  transform: rotate(40deg);
+  right: 40px;
+  top: 9px;
+}
+
+.item{
+  display: flex;
+  padding:15px;
+  height:80px;
+}
+
+.item-img{
+  width: 80px;
+  padding-right:15px;
+}
+
+.item-description{
+  flex: 1;
+}
+
+.item-title{
+  display: block;
+  font-size:14px;
+  white-space: nowrap;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+}
+
+.loading{
+  text-align: center;
+  padding: 15px 0;
+  vertical-align:middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadImg{
+  width: 25px;
+  display: inline-block;
+  margin-right:5px;
+}
+
+.loadText{
+  display: inline-block;
+}

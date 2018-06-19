@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.7",
 	"appid": "wx40213ea7f75a4207",
-	"projectname": "smallRoutine",
+	"projectname": "banmab",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

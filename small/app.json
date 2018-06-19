@@ -1,16 +1,16 @@
 {
   "pages":[
-    "pages/login/login",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/match-list/match-list",
+    "pages/matches/match",
+    "pages/uuuid/uuid"
   ],
   "window":{
     "navigationBarTitleText": "小程序商城",
-    "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "#aa154e",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#222",
     "backgroundColor": "#aa154e",
     "backgroundTextStyle": "dark",
     "onReachBottomDistance": "15",
-    "navigationStyle": "custom"
+    "navigationStyle": "default"
   }
 }

@@ -6,7 +6,6 @@ var DateFr = {
     return 'http://7xkufz.com2.z0.glb.qiniucdn.com/' + ev +'?imageView2/1/w/140/h/140';
   },
   getDate: function (time, splitStr) {
-    
     if (!time) return '';
 
     var date = getDate(time);
@@ -29,5 +28,5 @@ var DateFr = {
 }
 
 module.exports = {
-  getDate: DateFr
+  filter: DateFr
 }

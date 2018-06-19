@@ -1,0 +1,24 @@
+<wxs src="../../filter/dateFr.wxs" module="module" />
+<view class='select' >
+ <view class='select-match' catchtap='selectMatch' >{{match.arr[match.index]}}</view>
+ <view class='select-type' >{{matchType.arr[matchType.index]}}</view>
+</view>
+
+<view style='width: 100%; height: 41px;' ></view>
+<view class='match-list' >
+  <view class='item' wx:for="{{matchList}}" wx:for-index="index" wx:for-item="item" >
+    <view class='item-description-img' >
+     <image class='item-img' mode='widthFix' src='{{module.filter.icon(item.icon)}}' ></image>
+    </view>
+    <view class='item-description' >
+      <text class='item-title' >{{item.chineseName}}</text>
+      <text class='item-title' >{{module.filter.getDate(item.beginDate, '-')}} - {{module.filter.getDate(item.endDate, '-')}}</text>
+      <text class='item-title' >{{item.city.name}} - {{item.district.name}}</text>
+      <text class='item-title' >{{item.stateDesc}} {{item.sportType}} {{item.gameType}}</text>
+    </view>
+  </view>
+</view>
+<view class='loading' hidden="{{ load }}" >
+ <image class='loadImg' mode='widthFix' src='../../images/loading.gif' ></image>
+ <text class='loadText' >加载中</text>
+</view>
