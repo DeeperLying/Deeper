@@ -1,0 +1,15 @@
+.return {
+  position: fixed;
+  height: 150rpx;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}

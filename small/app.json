@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarTitleText": "小程序商城",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#aa154e",
+    "backgroundColor": "#aa154e",
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": "15",
+    "navigationStyle": "custom"
+  }
+}
