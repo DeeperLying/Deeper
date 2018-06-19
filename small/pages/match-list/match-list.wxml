@@ -30,7 +30,7 @@
 </view>
 <view class='loading' hidden="{{ load }}" >
  <image class='loadImg' mode='widthFix' src='../../images/loading.gif' ></image>
- <text class='loadText' >加载中</text>
+ <text class='loadText' >加载中。。。</text>
 </view>
 
 <view class='layer' wx:if="{{LayerLock}}" catchtouchstart='LayerHide' ></view>
