@@ -125,3 +125,13 @@
 .select-item{
   padding:10px 0;
 }
+
+.textColor{
+  color: red;
+}
+
+.list-air{
+  text-align: center;
+  font-size: 14px;
+  padding:15px 0;
+}

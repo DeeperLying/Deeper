@@ -1,15 +1,21 @@
 <wxs src="../../filter/dateFr.wxs" module="module" />
 <view class='select' >
  <view class='select-match' data-type="matchLock" catchtap='selectMatch' >
-  <text>{{match.arr[matchIndex]}}</text>
+  <text>{{matchIndex}}</text>
   <view class='select-list' wx:if="{{matchLock}}" >
-    <view catchtap='selectListIndex' class='select-item' wx:for-index="index"           wx:for="{{match.arr}}" data-type="matchLock" data-index="{{index}}" >{{item}}</view>
+    <view catchtap='selectListIndex' class="select-item {{status==item.id?'textColor':''}}" wx:for-index="index" wx:for="{{matchs}}" data-type="matchLock" data-index="{{index}}" data-data="{{item}}" >{{item.val}}</view>
   </view>        
  </view>
  <view class='select-type' data-type="matchTypeLock" catchtap='selectMatch' >
   <text>{{matchType.arr[matchTypeIndex]}}</text>
   <view class='select-list' wx:if="{{matchTypeLock}}" >
-    <view catchtap='selectListIndex' data-type="matchTypeLock" data-index="{{index}}" wx:for-index="index" class='select-item' wx:for="{{matchType.arr}}" >{{item}}</view>
+    <view 
+    catchtap='selectListIndex' data-type="matchTypeLock" 
+    data-index="{{index}}"                       
+    data-sportType="{{item}}" wx:for-index="index" 
+    class="select-item {{sportType == item ? 'textColor':''}}"
+    wx:for="{{matchType.arr}}" 
+  >{{item}}</view>
   </view>  
  </view>
 </view>
@@ -27,6 +33,9 @@
       <text class='item-title' >{{item.stateDesc}} {{item.sportType}} {{item.gameType}}</text>
     </view>
   </view>
+</view>
+<view class='list-air' hidden='{{listAir}}' >
+ <text>没有匹配的赛事, 请重新搜索</text>
 </view>
 <view class='loading' hidden="{{ load }}" >
  <image class='loadImg' mode='widthFix' src='../../images/loading.gif' ></image>
