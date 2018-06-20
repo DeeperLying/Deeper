@@ -28,9 +28,6 @@ Page({
 
   //网络请求
   networkRequests: function (){
-    this.setData({
-      load: false
-    });
     var appVersion = getApp();
     var _this = this;
     var param = {
@@ -49,12 +46,10 @@ Page({
       },
       success: function (res) {
         var obj = _this.data.matchList;
-        console.log(res.data.messages.data.otherMatchList, res.data.messages.data.otherMatchList.length, param)
         if(res.data.messages.data.otherMatchList.length < 1 ){
           _this.setData({
             listAir: false,
             load: true,
-            matchList: []
           })
           return;
         }
@@ -63,7 +58,8 @@ Page({
         })
         _this.setData({
           matchList: obj,
-          load: true
+          load: true,
+          listAir: true
         })
       },
       fail: function (event) {
@@ -124,7 +120,8 @@ Page({
   onReachBottom: function (event) {
     var pageNum = this.data.pageNum;
     this.setData({
-      pageNum: ++this.data.pageNum
+      pageNum: ++this.data.pageNum,
+      load: false
     })
     this.networkRequests();
   },

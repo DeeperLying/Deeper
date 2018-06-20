@@ -28,7 +28,7 @@
     </view>
     <view class='item-description' >
       <text class='item-title' >{{item.chineseName}}</text>
-      <text class='item-title' >{{module.filter.getDate(item.beginDate, '-')}} - {{module.filter.getDate(item.endDate, '-')}}</text>
+      <text class='item-title' >{{module.filter.getitem(item.beginDate, '-')}} - {{module.filter.getitem(item.endDate, '-')}}</text>
       <text class='item-title' >{{item.city.name}} - {{item.district.name}}</text>
       <text class='item-title' >{{item.stateDesc}} {{item.sportType}} {{item.gameType}}</text>
     </view>

@@ -5,25 +5,13 @@ var DateFr = {
     //http://7xkufz.com2.z0.glb.qiniucdn.com/FpnjXBzpe9QUcbFe0NUKLD7kr41y?imageView2/1/w/140/h/140
     return 'http://7xkufz.com2.z0.glb.qiniucdn.com/' + ev +'?imageView2/1/w/140/h/140';
   },
-  getDate: function (time, splitStr) {
+  getitem: function (time, splitStr) {
     if (!time) return '';
-
-    var date = getDate(time);
-    var M = date.getMonth() + 1;
-    var y = date.getFullYear();
-    var d = date.getDate();
-
-    if (M < 10) M = "0" + M;
-    if (d < 10) d = "0" + d;
-
-    if (splitStr)
-      return y +'/'+ M +'/'+ d;
-    else
-      return {
-        y: y,
-        M: M,
-        d: d
-      };
+    var index = time.indexOf('T');
+    var str = time.substring(0,index);
+    str = str.replace('-', '/');
+    str = str.replace('-', '/');
+    return str;
   }
 }
 
