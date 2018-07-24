@@ -22,7 +22,7 @@
 
 <view style='width: 100%; height: 41px;' ></view>
 <view>
-  <view class='item' wx:for="{{matchList}}" wx:for-index="index" wx:for-item="item" >
+  <view class='item' wx:for="{{matchList}}" wx:for-index="index" wx:for-item="item" catchtap='navigateTo' data-matchId='{{item.id}}' >
     <view class='item-description-img' >
      <image class='item-img' mode='widthFix' src='{{module.filter.icon(item.icon)}}' ></image>
     </view>

@@ -17,5 +17,5 @@ App({
   globalData: {
     userInfo: null
   },
-  appVersion: '2.14.2', //版本号
+  appVersion: '3.0', //版本号
 })

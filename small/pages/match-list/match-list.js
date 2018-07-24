@@ -205,5 +205,12 @@ Page({
       matchTypeLock: false,
     });
     this.networkRequests();
+  },
+  // url跳转
+  navigateTo: function (event){
+    var matchId = event.currentTarget.dataset.matchid;
+    wx.navigateTo({
+      url: '../matches/match?match=' + matchId,
+    })
   }
 })

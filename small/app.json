@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/match-list/match-list",
     "pages/matches/match",
+    "pages/match-list/match-list",
     "pages/uuuid/uuid"
   ],
   "window":{

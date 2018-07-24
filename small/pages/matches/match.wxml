@@ -1,2 +1,80 @@
-<navigator url='../uuuid/uuid' >344</navigator>
-<view>UI</view>
+<view class='banner' >
+  <image mode='widthFix' class='banner-img' src='http://7xkufz.com2.z0.glb.qiniucdn.com/FrH5WRfq87vNSaIyycI_gN1dushh?imageView2/1/w/640/h/512/format/jpg/interlace/1' ></image>
+</view>
+
+<view class='tab' >
+  <view class='tab-find' >
+    <image class='tab-icon'mode="widthFix"  src='../../images/jifen.gif' ></image>
+    积分榜
+  </view>
+  <view class='tab-find' >
+    <image class='tab-icon'mode="widthFix"  src='../../images/saichen.gif' ></image>
+    赛程表
+  </view>
+  <view class='tab-find' >
+    <image class='tab-icon'mode="widthFix"  src='../../images/playerrank.png' ></image>
+    球员榜
+  </view>
+  <view class='tab-find' >
+    <image class='tab-icon'mode="widthFix"  src='../../images/match_info.png' ></image>
+    赛事信息
+  </view>
+</view>
+
+<view class='matchBody' >
+  <view class='matchData' >
+      <view class='score' >
+        <view class='score-list' >
+          <view class='score-string' >50</view>
+          比赛场次
+        </view>
+        <view class='score-list' >
+          <view class='score-string' >259</view>
+          进球数
+        </view>
+      </view>
+      <view class='mean' >
+        <view class='mean-val' >5.2</view>
+        <image class='mean-img' mode="widthFix" src='../../images/match_goal_icon.png' ></image>
+        <view class='mean-val' >5.5</view>
+      </view>
+      <view class='mean-bij' >
+        <view class='mean-text' >本赛事</view>
+        <view class='mean-img' ></view>
+        <view class='mean-text' >全平台赛事</view>
+      </view>
+      <view class='more' >
+        更多数据
+      </view>
+  </view>
+
+  <view class='news' >
+    <view class='news-ionc' >
+     <image class='news-img' mode='widthFix' src='../../images/default-bulletin.png' ></image>
+    </view>
+    <view class='news-test' >
+      <text class='news-title' >本轮停赛通知(小组赛第二轮)</text>
+      <text class='news-time' > 05-29 </text>
+    </view>
+  </view>
+  <view class='more' >
+    更多数据
+  </view>
+
+  <view class='group' >
+    <view class='group-list' >
+      <view class='group-img' >
+       <image class='group-icon' src='../../images/09.png' mode='widthFix' ></image>
+      </view>
+      <view class='group-text' >
+        <view class='grou-name' >赢越</view>
+        <view class='grou-map' >北京</view>
+      </view>
+      <view class='group-add' >
+        <view class='group-add-dome' >
+         入队
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
